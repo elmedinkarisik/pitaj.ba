@@ -55,6 +55,7 @@ const VoteButtons = ({ question }) => {
         handleDisablingOfVoting(question.id);
 
         setVoting(false);
+
     };
 
     const checkIfQuestionIsAlreadyVoted = () => {
