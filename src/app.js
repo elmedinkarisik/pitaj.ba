@@ -8,8 +8,6 @@ const App = () => {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    // Hook to handle the initial fetching of posts
-
     db.collection("questions")
       .orderBy("createdAt", "desc")
       .onSnapshot((querySnapshot) => {
